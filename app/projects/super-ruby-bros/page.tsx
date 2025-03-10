@@ -11,8 +11,11 @@ export default function SuperRubyBros() {
         height={400}
         className="pb-4"
       />
-      <p>One of my first coding projects, Super Ruby Bros is a simple 2D platformer built entirely in Ruby using Ruby2D. While Ruby isn't typically used for game development, this project was a fun experiment in handling physics, collision detection, and game loops in an unconventional language. It taught me valuable lessons in structuring code for interactive applications. Looking back, it's rough, but it's a milestone that pushed my problem-solving skills forward.</p>
-      <p><strong>Technology Used:</strong> Ruby, Ruby2D</p>
+      <p>Super Ruby Bros is a 2D platformer built in Ruby using Ruby2D, featuring physics-based movement, collision detection, and basic AI behaviors. While Ruby isn’t a conventional choice for game development, this project challenged me to implement game loops, sprite animations, and object interactions from scratch.</p>
+      <p>Through this project, I gained experience in event-driven programming, optimizing real-time updates, and structuring code for interactive applications. It was a pivotal step in my development journey, reinforcing my problem-solving skills and deepening my understanding of how game engines handle state and logic.</p>
+      <p><strong>Technology Used:</strong></p>
+      <p><strong>Ruby</strong> - Core logic and object-oriented structure</p>
+      <p><strong>Ruby2D</strong> - Rendering, sprite management, and input handling</p>
       <p><strong>GitHub:</strong> <a href="https://github.com/harrythomson1/super-ruby-bros" className="underline">Super Ruby Bros</a></p>
     </>
   );
