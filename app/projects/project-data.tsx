@@ -10,7 +10,7 @@ export const projects: Project[] = [
     title: "Mithril AI",
     year: 2024,
     description: "Open science AI resarch lab",
-    url: "https://github.com/mithrilai",
+    url: "/projects/super-ruby-bros",
   },
   {
     title: "OpenDeepLearning",
