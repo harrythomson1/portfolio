@@ -7,15 +7,9 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Mithril AI",
-    year: 2024,
-    description: "Open science AI resarch lab",
+    title: "Super Ruby Bros",
+    year: 2021,
+    description: "A 2D Ruby platformer",
     url: "/projects/super-ruby-bros",
-  },
-  {
-    title: "OpenDeepLearning",
-    year: 2023,
-    description: "Open source AI education resources",
-    url: "https://opendeeplearning.xyz/",
-  },
+  }
 ];
