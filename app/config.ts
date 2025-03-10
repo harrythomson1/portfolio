@@ -9,5 +9,5 @@ export const metaData = {
 export const socialLinks = {
   github: "https://github.com/harrythomson1",
   linkedin: "https://www.linkedin.com/in/harry-thomson-536674211/",
-  email: "haroldt95@hotmail.com",
+  email: "mailto:haroldt95@hotmail.com",
 };
