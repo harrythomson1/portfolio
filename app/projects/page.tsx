@@ -17,7 +17,6 @@ export default function Projects() {
             key={index}
             href={project.url}
             className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
