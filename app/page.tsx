@@ -1,7 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { socialLinks } from "./config";
+import {
+  FaGithub,
+  FaLinkedinIn,
+} from "react-icons/fa6";
+import { TbMailFilled } from "react-icons/tb";
+import { SocialLink } from "./components/footer"; // ✅ Import SocialLinks from Footer
 
 export default function Page() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section>
       <a href={socialLinks.linkedin} target="_blank">
@@ -29,11 +40,33 @@ export default function Page() {
         <p>
           Outside of work, I love traveling and exploring different cultures, as well as building apps that solve real-life problems and make my life more efficient.
         </p>
-        <p>
-          <a href="/contact" className="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 no-underline">
-            Contact Me
-          </a>
-        </p>
+          <button
+            onClick={() => setShowModal(true)}
+            className="px-4 py-2 rounded-md transition-opacity duration-300 hover:opacity-90 bg-blue-600 dark:bg-gray-800 text-white"
+          >
+            Hire Me
+          </button>
+
+          {showModal && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-80 text-center">
+                <h2 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Let's Connect</h2>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Reach me on any of these platforms:</p>
+
+                <div className="flex justify-center gap-4 mb-4">
+                  <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
+                  <SocialLink href={socialLinks.github} icon={FaGithub} />
+                  <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+                </div>
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="mt-4 px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
       </div>
     </section>
   );
