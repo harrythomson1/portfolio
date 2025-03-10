@@ -24,7 +24,7 @@ export default function Page() {
           I have over 5 years of commercial experience.
         </p>
         <p>
-          My tech stack includes Ruby, Ruby on Rails, Python, Javascript, Typescript, FastAPI, Postgresql, MongoDB, AWS, Docker. I'm always eager to learn and adapt to new technologies.
+          My tech stack includes Ruby, Ruby on Rails, Python, Javascript, Typescript, React, React Native, FastAPI, Postgresql, MongoDB, AWS, Docker. I'm always eager to learn and adapt to new technologies.
         </p>
         <p>
           Outside of work, I love traveling and exploring different cultures, as well as building apps that solve real-life problems and make my life more efficient.
