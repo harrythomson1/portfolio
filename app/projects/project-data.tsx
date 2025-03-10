@@ -11,5 +11,11 @@ export const projects: Project[] = [
     year: 2021,
     description: "A 2D Ruby platformer",
     url: "/projects/super-ruby-bros",
+  },
+  {
+    title: "Etch-a-Sketch",
+    year: 2020,
+    description: "A browser based Etch-a-Sketch",
+    url: "/projects/etch-a-sketch",
   }
 ];
