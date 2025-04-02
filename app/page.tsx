@@ -31,14 +31,19 @@ export default function Page() {
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I'm a backend-focused software engineer passionate about building efficient, scalable applications.
-          I have over 5 years of commercial experience.
+          I'm a backend-focused software engineer with 5+ years of commercial experience building scalable, reliable web applications.
         </p>
         <p>
-          My tech stack includes Ruby, Ruby on Rails, Python, Javascript, Typescript, React, React Native, FastAPI, Postgresql, MongoDB, AWS, Docker. I'm always eager to learn and adapt to new technologies.
+          I specialize in clean, maintainable code that solves real-world problems without turning the codebase into a puzzle. My core stack includes Python, FastAPI, Ruby on Rails, JavaScript, TypeScript, React, PostgreSQL, MongoDB, Docker, and AWS.
         </p>
         <p>
-          Outside of work, I love traveling and exploring different cultures, as well as building apps that solve real-life problems and make my life more efficient.
+          Before moving into tech, I worked in sales and learning development an experience that taught me how to communicate clearly and build practical solutions that actually fit the people using them.
+        </p>
+        <p>
+          When I'm not coding, I enjoy traveling, exploring new cultures, and building small tools to simplify everyday problems.
+        </p>
+        <p>
+          If you're looking for someone who brings technical experience and strong communication to the table, let's talk.
         </p>
           <button
             onClick={() => setShowModal(true)}
