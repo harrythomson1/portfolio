@@ -6,6 +6,7 @@ import { socialLinks } from "./config";
 import {
   FaGithub,
   FaLinkedinIn,
+  FaTwitter,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { SocialLink } from "./components/footer"; // ✅ Import SocialLinks from Footer
@@ -61,6 +62,7 @@ export default function Page() {
                 <div className="flex justify-center gap-4 mb-4">
                   <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
                   <SocialLink href={socialLinks.github} icon={FaGithub} />
+                  <SocialLink href={socialLinks.twitter} icon={FaTwitter} />
                   <SocialLink href={socialLinks.email} icon={TbMailFilled} />
                 </div>
                 <button
