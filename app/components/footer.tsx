@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "app/config";
 
@@ -18,8 +18,9 @@ export function SocialLink({ href, icon: Icon }: { href: string; icon: React.Ele
 export function SocialLinks() {
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
+      <SocialLink href={socialLinks.github} icon={FaGithub} />
+      <SocialLink href={socialLinks.twitter} icon={FaTwitter} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
     </div>
   );
