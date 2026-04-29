@@ -11,7 +11,7 @@ export function Hero() {
         <div className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
           {site.role}
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] tracking-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] md:leading-[1.05] tracking-tight">
           Hi, I&apos;m
           <br />
           <span className="text-accent">{site.name}.</span>
@@ -35,7 +35,7 @@ export function Hero() {
       <div className="flex justify-center md:justify-end">
         <AvatarSlot
           rounded="card"
-          className="aspect-[3/4] w-full max-w-[320px]"
+          className="aspect-[3/4] w-full max-w-[260px] md:max-w-[320px]"
           src="/images/me.jpg"
         />
       </div>

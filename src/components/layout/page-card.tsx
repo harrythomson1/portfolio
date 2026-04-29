@@ -9,7 +9,8 @@ export function PageCard({ children, className = "" }: Props) {
   return (
     <div
       className={
-        "relative min-h-[calc(100vh-2rem)] rounded-card bg-surface text-ink p-10 md:p-14 overflow-hidden " +
+        "relative rounded-card bg-surface text-ink p-6 sm:p-10 md:p-14 overflow-hidden " +
+        "min-h-[calc(100vh-7rem)] md:min-h-[calc(100vh-2rem)] " +
         className
       }
     >

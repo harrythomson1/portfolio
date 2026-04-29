@@ -20,7 +20,9 @@ export type IconName =
   | "code"
   | "heart"
   | "lightbulb"
-  | "puzzle";
+  | "puzzle"
+  | "menu"
+  | "close";
 
 const PATHS: Record<IconName, ReactElement> = {
   home: (
@@ -174,6 +176,20 @@ const PATHS: Record<IconName, ReactElement> = {
       d="M9 3h6v3a2 2 0 1 0 4 0v0h2v6h-3a2 2 0 1 0 0 4h3v5H9v-3a2 2 0 1 1-4 0v3H3v-9h3a2 2 0 1 0 0-4H3V3h6Z"
       strokeWidth="1.6"
       strokeLinejoin="round"
+    />
+  ),
+  menu: (
+    <path
+      d="M4 6h16M4 12h16M4 18h16"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+    />
+  ),
+  close: (
+    <path
+      d="M6 6l12 12M6 18 18 6"
+      strokeWidth="1.7"
+      strokeLinecap="round"
     />
   ),
 };

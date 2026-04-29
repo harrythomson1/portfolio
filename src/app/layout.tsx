@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Sidebar } from "@/components/layout/sidebar";
 import "./globals.css";
@@ -12,13 +12,19 @@ export const metadata: Metadata = {
     "Portfolio of Harry Thomson, a software engineer building scalable web applications.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b1020",
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="flex min-h-screen w-full bg-canvas p-4 gap-4">
+        <div className="min-h-screen w-full bg-canvas p-3 md:p-4 md:flex md:gap-4">
           <Sidebar />
-          <main className="flex-1 min-w-0">{children}</main>
+          <main className="flex-1 min-w-0 mt-3 md:mt-0">{children}</main>
         </div>
       </body>
     </html>
