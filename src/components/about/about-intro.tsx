@@ -46,7 +46,7 @@ export function AboutIntro() {
           </li>
         </ul>
       </div>
-      <AvatarSlot rounded="card" className="aspect-[3/4] w-full max-w-[300px] justify-self-end" />
+      <AvatarSlot rounded="card" className="aspect-[3/4] w-full max-w-[300px] justify-self-end" src="images/me.jpg"/>
     </section>
   );
 }

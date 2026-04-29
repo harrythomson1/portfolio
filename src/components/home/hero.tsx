@@ -36,6 +36,7 @@ export function Hero() {
         <AvatarSlot
           rounded="card"
           className="aspect-[3/4] w-full max-w-[320px]"
+          src="/images/me.jpg"
         />
       </div>
     </section>
