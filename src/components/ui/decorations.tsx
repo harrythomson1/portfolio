@@ -35,8 +35,9 @@ export function Squiggle({ className = "" }: Props) {
       fill="none"
       aria-hidden
     >
+      {/* All control points stay within y=4–16, well inside the 20-tall viewBox */}
       <path
-        d="M2 14C8 4 14 4 20 14s12 10 18 0 12-10 18 0 12 10 18 0"
+        d="M2 10C8 4 14 4 20 10S32 16 38 10 50 4 56 10s12 6 18 0"
         stroke="#a78bfa"
         strokeWidth="2"
         strokeLinecap="round"
