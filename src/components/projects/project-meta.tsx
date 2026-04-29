@@ -20,23 +20,9 @@ function MetaCell({
 
 export function ProjectMeta({ project }: { project: Project }) {
   return (
-    <div className="grid gap-6 border-y border-line py-6 md:grid-cols-4">
+    <div className="grid gap-6 border-y border-line py-6 md:grid-cols-3">
       <MetaCell label="Role">{project.role}</MetaCell>
       <MetaCell label="Duration">{project.duration}</MetaCell>
-      <MetaCell label="Live Demo">
-        {project.liveUrl ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1 text-accent hover:underline"
-          >
-            {project.liveLabel ?? "Visit"} <Icon name="external" className="h-3.5 w-3.5" />
-          </a>
-        ) : (
-          <span className="text-ink-muted">—</span>
-        )}
-      </MetaCell>
       <MetaCell label="GitHub">
         {project.repoUrl ? (
           <div className="flex flex-col gap-1">
