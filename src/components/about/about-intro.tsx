@@ -15,7 +15,7 @@ export function AboutIntro() {
         <p className="mt-6 max-w-xl text-base text-ink-soft">
           I&apos;m a {site.role} with over 4 years of production experience across high-traffic
           Rails systems, Python APIs and React with TypeScript frontends. I&apos;m currently
-          seeking a mid-level engineering role.
+          seeking a mid-level engineering role. In my free time, I enjoy reading, travelling, and watching films.
         </p>
 
         <ul className="mt-8 space-y-3 text-sm">
@@ -46,7 +46,7 @@ export function AboutIntro() {
           </li>
         </ul>
       </div>
-      <AvatarSlot rounded="card" className="aspect-[3/4] w-full max-w-[300px] justify-self-end" src="images/me.jpg"/>
+      <AvatarSlot rounded="card" className="aspect-[3/4] w-full max-w-[300px] justify-self-end" src="images/aboutme.jpg"/>
     </section>
   );
 }
