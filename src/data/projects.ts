@@ -17,15 +17,21 @@ export type Project = {
   liveUrl?: string;
   liveLabel?: string;
   repoUrl?: string;
+  repoUrlBackend?: string;
   techStack: TechKey[];
   features: string[];
   learnings: string;
-  /** Path inside /public, e.g. "/videos/gucheongam.mp4". Leave undefined to fall back to image or empty placeholder. */
+  /** Path inside /public, e.g. "/videos/gucheongam.mp4". Leave undefined to fall back to image or designed showcase. */
   videoSrc?: string;
   /** Optional image fallback in /public, e.g. "/images/gucheongam.png". */
   imageSrc?: string;
   /** 0–2: 0 = paused, 1 = normal, etc. Used by the video element if you want slow-mo. */
   playbackRate?: number;
+  /**
+   * Optional headline stat shown on the showcase card when there's no video / image.
+   * Example: { value: "~5%", label: "Conversion uplift" }
+   */
+  highlight?: { value: string; label: string };
 };
 
 export const projects: Project[] = [
@@ -42,6 +48,8 @@ export const projects: Project[] = [
     featured: true,
     role: "Solo Engineer (Freelance / Volunteer)",
     duration: "2026",
+    repoUrl: "https://github.com/harrythomson1/gucheung-am-tea-inventory-frontend",
+    repoUrlBackend: "https://github.com/harrythomson1/gucheung-am-tea-inventory-backend",
     techStack: ["fastapi", "react", "typescript", "supabase", "pytest"],
     features: [
       "Bilingual interface (Korean and English) for non-technical users",
@@ -53,6 +61,7 @@ export const projects: Project[] = [
     ],
     learnings:
       "Shipping for users whose native language wasn't my own forced me to slow down on UX writing, error states and documentation — and to think about non-technical operators first. The hardest part wasn't the stack, it was making the product invisible.",
+    videoSrc: "/videos/projects/inventory.mp4"
   },
   {
     slug: "simply-business-checkout",
@@ -76,6 +85,7 @@ export const projects: Project[] = [
     ],
     learnings:
       "Working inside a large monolith taught me how to ship safely under load — small reversible changes, good test coverage and tight feedback loops with experimentation matter more than clever architecture.",
+    highlight: { value: "~5%", label: "Conversion uplift" },
   },
   {
     slug: "gradtopia-live-chat",
@@ -122,6 +132,7 @@ export const projects: Project[] = [
     ],
     learnings:
       "Money systems have to be boring. Idempotency, event ordering and replay-ability mattered far more than throughput — designing for correctness first paid off every time we extended it.",
+    highlight: { value: "100%", label: "Transaction accuracy at scale" },
   },
 ];
 

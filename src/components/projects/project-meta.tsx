@@ -39,14 +39,27 @@ export function ProjectMeta({ project }: { project: Project }) {
       </MetaCell>
       <MetaCell label="GitHub">
         {project.repoUrl ? (
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1 text-accent hover:underline"
-          >
-            View Code <Icon name="external" className="h-3.5 w-3.5" />
-          </a>
+          <div className="flex flex-col gap-1">
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-accent hover:underline"
+            >
+              {project.repoUrlBackend ? "Frontend" : "View Code"}
+              <Icon name="external" className="h-3.5 w-3.5" />
+            </a>
+            {project.repoUrlBackend && (
+              <a
+                href={project.repoUrlBackend}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1 text-accent hover:underline"
+              >
+                Backend <Icon name="external" className="h-3.5 w-3.5" />
+              </a>
+            )}
+          </div>
         ) : (
           <span className="text-ink-muted">—</span>
         )}

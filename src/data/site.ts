@@ -6,10 +6,10 @@ export const site = {
   available: "Open to mid-level engineering roles",
   email: "harrythomsondev@gmail.com",
   links: {
-    github: { label: "github.com/harrythomson", href: "https://github.com/harrythomson" },
+    github: { label: "github.com/harrythomson1", href: "https://github.com/harrythomson1" },
     linkedin: {
-      label: "linkedin.com/in/harrythomson",
-      href: "https://linkedin.com/in/harrythomson",
+      label: "linkedin.com/in/harry-thomson-536674211",
+      href: "https://www.linkedin.com/in/harry-thomson-536674211",
     },
   },
   resumeUrl: "/resume.pdf",

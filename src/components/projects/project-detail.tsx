@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/icon";
 import { TechBadge } from "@/components/ui/tech-badge";
-import { MediaSlot } from "@/components/ui/media-slot";
 import { ProjectMeta } from "./project-meta";
+import { ProjectShowcase } from "./project-showcase";
 import { TECH } from "@/data/tech";
 import type { Project } from "@/data/projects";
 
@@ -28,12 +28,7 @@ export function ProjectDetail({ project }: { project: Project }) {
       </div>
 
       <div className="mt-8">
-        <MediaSlot
-          videoSrc={project.videoSrc}
-          imageSrc={project.imageSrc}
-          alt={project.title}
-          playbackRate={project.playbackRate ?? 1}
-        />
+        <ProjectShowcase project={project} />
       </div>
 
       <section className="mt-10">
